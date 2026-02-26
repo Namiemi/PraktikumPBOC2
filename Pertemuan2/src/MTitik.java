@@ -52,6 +52,5 @@ public class MTitik
         Titik T7 = T5.getRefleksiY();
         System.out.print("\nTitik T7 (refleksi T5 terhadap sumbu Y): ");
         T7.printTitik();
-        
     }
 }
