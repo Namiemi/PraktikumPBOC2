@@ -22,7 +22,7 @@ public class MTitik
         T2.printTitik();
 
         Titik T3 = new Titik(2,2);
-        System.out.print("Titik T3: ");
+        System.out.print("\nTitik T3: ");
         T3.printTitik();
 
         System.out.println("Jumlah objek titik yang telah dibuat: " + Titik.getCounterTitik());
