@@ -72,7 +72,7 @@ public class Garis {
         System.out.println("Titik Akhir: (" + this.titik_akhir.getAbsis() + ", " + this.titik_akhir.getOrdinat() + ")");
     }
 
-    void  persamaanGradien()
+    void persamaanGradien()
     {
         double m = this.getGradien();
         double c = this.titik_awal.getOrdinat() - m * this.titik_awal.getAbsis();
