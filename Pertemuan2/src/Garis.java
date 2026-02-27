@@ -1,3 +1,9 @@
+/* Nama File    : Garis.java
+ * Deskripsi    : berisi atribut dan method dalam class Garis 
+ * Pembuat      : Muhammad Abhista Pratama Sava / 24060124130058
+ * Tanggal      : Kamis, 19 Februari 2026
+*/
+
 public class Garis {
     
     /**********ATRIBUT**********/
@@ -18,7 +24,18 @@ public class Garis {
     {
         this(new Titik(0,0), new Titik(1,1));
     }
+    
+    /*Mutator*/
+    void setTitikAwal(Titik t)
+    {
+        this.titik_awal = t;
+    }
 
+    void setTitikAkhir(Titik t)
+    {
+        this.titik_akhir = t;
+    }
+    
     /*Selektor*/
     Titik getTitikAwal()
     {
@@ -37,13 +54,13 @@ public class Garis {
 
     double getPanjang()
     {
-        return this.titik_awal.getJarak(this.titik_akhir);
+        return getTitikAwal().getJarak(getTitikAkhir());
     }
 
     double getGradien()
     {
-        double deltaY = this.titik_akhir.getOrdinat() - this.titik_awal.getOrdinat();
-        double deltaX = this.titik_akhir.getAbsis() - this.titik_awal.getAbsis();
+        double deltaY = getTitikAkhir().getOrdinat() - getTitikAwal().getOrdinat();
+        double deltaX = getTitikAkhir().getAbsis() - getTitikAwal().getAbsis();
         
         double gradien = deltaY / deltaX;
         return gradien;
@@ -51,11 +68,12 @@ public class Garis {
     
     Titik getGarisTengah()
     {
-        double absis = (this.titik_awal.getAbsis() + this.titik_akhir.getAbsis()) / 2;
-        double ordinat = (this.titik_awal.getOrdinat() + this.titik_akhir.getOrdinat()) / 2;
+        double absis = (getTitikAwal().getAbsis() + getTitikAkhir().getAbsis()) / 2;
+        double ordinat = (getTitikAwal().getOrdinat() + getTitikAkhir().getOrdinat()) / 2;
         return new Titik(absis, ordinat);
     }
 
+    /*********************************/
     boolean isSejajar(Garis g)
     {
         return this.getGradien() == g.getGradien();
@@ -66,16 +84,17 @@ public class Garis {
         return this.getGradien() * g.getGradien() == -1;
     }
 
+    /*********************************/
     void printGarisTitik()
     {
-        System.out.println("Titik Awal: (" + this.titik_awal.getAbsis() + ", " + this.titik_awal.getOrdinat() + ")");
-        System.out.println("Titik Akhir: (" + this.titik_akhir.getAbsis() + ", " + this.titik_akhir.getOrdinat() + ")");
+        System.out.println("Titik Awal: (" + getTitikAwal().getAbsis() + ", " + getTitikAwal().getOrdinat() + ")");
+        System.out.println("Titik Akhir: (" + getTitikAkhir().getAbsis() + ", " + getTitikAkhir().getOrdinat() + ")");
     }
 
     void persamaanGradien()
     {
         double m = this.getGradien();
-        double c = this.titik_awal.getOrdinat() - m * this.titik_awal.getAbsis();
+        double c = getTitikAwal().getOrdinat() - m * getTitikAwal().getAbsis();
         System.out.println("Persamaan garis: y = " + m + "x + " + c);
     }
 }
