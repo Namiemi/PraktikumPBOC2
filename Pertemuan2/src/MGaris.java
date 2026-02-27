@@ -1,29 +1,32 @@
 /* Nama File    : MGaris.java
  * Deskripsi    : untuk menguji class Garis dengan membuat beberapa objek garis dan memanggil method 
  * Pembuat      : Muhammad Abhista Pratama Sava / 24060124130058
- * Tanggal      : Kamis, 19 Februari 2026
+ * Tanggal      : Kamis, 26 Februari 2026
 */
 
 public class MGaris {
     public static void main(String[] args) {
-        Garis G1 = new Garis(new Titik(1,1), new Titik(3,3));
-        
-        G1.setTitikAwal(new Titik(1,2));
-        G1.setTitikAkhir(new Titik(3,4));
-        System.out.println("Titik Awal G1: (" + G1.getTitikAwal().getAbsis() + ", " + G1.getTitikAwal().getOrdinat() + ")");
-        System.out.println("Titik Akhir G1: (" + G1.getTitikAkhir().getAbsis() + ", " + G1.getTitikAkhir().getOrdinat() + ")");
+        Garis G1 = new Garis(new Titik(1, 1), new Titik(3, 3));
+
+        G1.setTitikAwal(new Titik(1, 2));
+        G1.setTitikAkhir(new Titik(3, 4));
+        System.out.println(
+                "Titik Awal G1: (" + G1.getTitikAwal().getAbsis() + ", " + G1.getTitikAwal().getOrdinat() + ")");
+        System.out.println(
+                "Titik Akhir G1: (" + G1.getTitikAkhir().getAbsis() + ", " + G1.getTitikAkhir().getOrdinat() + ")");
 
         G1.printGarisTitik();
         System.out.println("Panjang G1: " + G1.getPanjang());
         System.out.println("Gradien G1: " + G1.getGradien());
-        System.out.println("Garis Tengah G1: (" + G1.getGarisTengah().getAbsis() + ", " + G1.getGarisTengah().getOrdinat() + ")");
-        
-        Garis G2 = new Garis(new Titik(2,3), new Titik(4,5));
-        G2.printGarisTitik(); 
+        System.out.println(
+                "Garis Tengah G1: (" + G1.getGarisTengah().getAbsis() + ", " + G1.getGarisTengah().getOrdinat() + ")");
+
+        Garis G2 = new Garis(new Titik(2, 3), new Titik(4, 5));
+        G2.printGarisTitik();
         System.out.println("G1 sejajar dengan G2: " + G1.isSejajar(G2));
         System.out.println("G1 tegak lurus dengan G2: " + G1.isTegakLurus(G2));
 
-        Garis G3 = new Garis(new Titik(-2, 0), new Titik(0,4));
+        Garis G3 = new Garis(new Titik(-2, 0), new Titik(0, 4));
         G3.printGarisTitik();
         G3.persamaanGradien();
 
