@@ -1,7 +1,18 @@
+/* Nama File    : MGaris.java
+ * Deskripsi    : untuk menguji class Garis dengan membuat beberapa objek garis dan memanggil method 
+ * Pembuat      : Muhammad Abhista Pratama Sava / 24060124130058
+ * Tanggal      : Kamis, 19 Februari 2026
+*/
+
 public class MGaris {
     public static void main(String[] args) {
-        Garis G1 = new Garis(new Titik(1,2), new Titik(3,4));
+        Garis G1 = new Garis(new Titik(1,1), new Titik(3,3));
         
+        G1.setTitikAwal(new Titik(1,2));
+        G1.setTitikAkhir(new Titik(3,4));
+        System.out.println("Titik Awal G1: (" + G1.getTitikAwal().getAbsis() + ", " + G1.getTitikAwal().getOrdinat() + ")");
+        System.out.println("Titik Akhir G1: (" + G1.getTitikAkhir().getAbsis() + ", " + G1.getTitikAkhir().getOrdinat() + ")");
+
         G1.printGarisTitik();
         System.out.println("Panjang G1: " + G1.getPanjang());
         System.out.println("Gradien G1: " + G1.getGradien());

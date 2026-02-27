@@ -1,5 +1,5 @@
 /* Nama File    : Titik.java
- * Deskripsi    : beisi atribut dan method dalam class Titik 
+ * Deskripsi    : berisi atribut dan method dalam class Titik 
  * Pembuat      : Muhammad Abhista Pratama Sava / 24060124130058
  * Tanggal      : Kamis, 19 Februari 2026
 */

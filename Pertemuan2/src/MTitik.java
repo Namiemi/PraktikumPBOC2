@@ -1,5 +1,5 @@
-/* Nama File    : Titik.java
- * Deskripsi    : beisi atribut dan method dalam class Titik 
+/* Nama File    : MTitik.java
+ * Deskripsi    : untuk menguji class Titik dengan membuat beberapa objek titik dan memanggil method 
  * Pembuat      : Muhammad Abhista Pratama Sava / 24060124130058
  * Tanggal      : Kamis, 19 Februari 2026
 */
