@@ -31,15 +31,15 @@ public class MataKuliah {
 
     /* Setter */
     /* Method-method untuk mengubah nilai atribut */
-    void setIdMatkul(String idmatkul) {
+    public void setIdMatkul(String idmatkul) {
         this.idmatkul = idmatkul;
     }
 
-    void setNama(String nama) {
+    public void setNama(String nama) {
         this.nama = nama;
     }
 
-    void setSKS(int sks) {
+    public void setSKS(int sks) {
         this.sks = sks;
     }
 
@@ -51,7 +51,6 @@ public class MataKuliah {
 
     public String getNama() {
         return this.nama;
-
     }
 
     public int getSKS() {
