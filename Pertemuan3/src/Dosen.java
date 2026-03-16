@@ -51,7 +51,6 @@ public class Dosen {
 
     public String getNama() {
         return this.nama;
-
     }
 
     public String getProdi() {
