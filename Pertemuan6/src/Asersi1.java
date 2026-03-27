@@ -1,0 +1,17 @@
+/* Nama File    : Asersi1.java
+ * Deskripsi    : Program untuk menunjukkan penggunaan asersi 
+ * Pembuat      : Muhammad Abhista Pratama Sava / 24060124130058
+ * Tanggal      : Kamis, 26 Maret 2026
+*/
+
+public class Asersi1 {
+    public static void main(String[] args) {
+        int x = 0;
+        if (x > 0) {
+            System.out.println("x adalah bilangan positif");
+        } else {
+            assert (x < 0) : "ada kesalahan kode";
+            System.out.println("x adalah bilangan negatif");
+        }
+    }
+}
